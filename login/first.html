@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .outer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .inner1{
+            background-image:url("included/images/login.jpg");
+            background-repeat:no-repeat;
+            background-size:contain;
+            height:80vh;
+            width: 100%;
+            margin-top: 4.5%;
+            border-image: round;
+
+        
+        }
+        .inner2{
+            width: 50%;
+            height:100vh;
+        }
+        .inner3{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            padding: 20% 10%;
+            margin: 25% 11%;
+            border-radius: 10px;
+            box-shadow: 5px 10px 18px #888888;
+            background-image: linear-gradient(to bottom right , #b3e3f8, #26547C);
+        }
+        input{
+            padding: 5%;
+            border-radius: 10px;
+        }
+        input:hover{
+            background-color:  #26547C;
+            color: white;
+            
+        }
+        .inner3 h1{
+            text-shadow: 1px 1px  white;
+            text-align: center;
+        }
+        input[type=submit]{
+            padding:10%;
+            margin-left: 65%;
+            margin-top: 7%;
+        }
+        .didnt{
+            text-decoration: none;
+            color: black;
+        }
+        .didnt:hover{
+            color:  whitesmoke;
+        }
+        .did{
+            text-decoration: none;
+            color: black;
+            margin-left: 30%;
+        }
+        .did:hover{
+            color:  rgb(226, 217, 217);
+        } 
+        .outer{
+            background-color: #26547C;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">
+        </div>
+        <div class="inner2">
+            <div class="inner3">
+                <form method="POST" action="authenticate.php">
+                    <h1>Login</h1>
+                    <input type="email" name="Username" required placeholder="Username: "><br><br>
+                    <input type="password" name="Password" required placeholder="Password: "><br><br>
+                    <input type="submit" value="Login" ><br><br><br>
+                    <a href="index.php" class="did">Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+</html>
